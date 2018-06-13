@@ -4,14 +4,22 @@ public class Main {
 
    public static void main(String args[]) {
 
+// variable that stores the user's input from a popup box
       String month = JOptionPane.showInputDialog("Enter MONTH: ");
+     
+// variable that formats the user's input using all Uppercase to keep consistent
       String format = month.toUpperCase();
+      
+// if statement that checks to see if the user inputted anything into the popbox if user didnt month would equal ""
       if (!month.equals("")) {
 
+// switch that toggles through each month depending on the month entered by the user and displays the correct # of days
          switch (format) {
             case "JANUARY":
                System.out.println("January has 31 days ");
                break;
+               
+// February is a special month due to a leap year so if the user inputs February, the program will ask the user if it's a leap year and pending on the answer will give appropriate amount of days.
             case "FEBRUARY":
                String answer = JOptionPane.showInputDialog("Is it a leap year?");
                String upperAnswer = answer.toUpperCase();
@@ -51,12 +59,13 @@ public class Main {
             case "DECEMBER":
                System.out.println("December has 31 days ");
                break;
+        // if user enters an invalid month, the program will state that it is not a valid month.
             default:
                System.out.println("Not a month");
          }
 
       }
-
+// if the user does not enter anything and clicks ok or clicks enter the program will show canceled operation.
       else System.out.println("Canceled operation");
    }
 

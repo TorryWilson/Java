@@ -1,7 +1,12 @@
 public class Organization {
 
     String name;
-    Double revenue;
+    int revenue;
     boolean profit;
+    
+    public void display() {
+
+        System.out.print(name + " has" + " " + revenue + " dollars in revenue" );
+    }
 
 }

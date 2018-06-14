@@ -4,11 +4,22 @@ public class Organization {
     private double revenue;
     private boolean profit;
     public void setName(String name) {
-        this.name = name;
+
+        // make sure user enterd a name
+        if (!name.equals("")) {
+            this.name = name;
+        }
+
+
+
+
     }
 
     public void setRevenue(double revenue) {
-        this.revenue = revenue;
+        
+        // make sure revenue user entered is greater than 0
+        if (revenue > 0) {
+        this.revenue = revenue; }
     }
 
     public void setProfit(boolean profit) {

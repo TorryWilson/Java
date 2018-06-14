@@ -1,8 +1,35 @@
 public class Organization {
 
-    String name;
-    double revenue;
-    boolean profit;
+    private String name;
+    private double revenue;
+    private boolean profit;
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setRevenue(double revenue) {
+        this.revenue = revenue;
+    }
+
+    public void setProfit(boolean profit) {
+        this.profit = profit;
+    }
+
+
+    public String getName() {
+        return name;
+    }
+
+    public double getRevenue() {
+        return revenue;
+    }
+
+    public boolean isProfit() {
+        return profit;
+    }
+
+
+
 // displays information about the organization
     public void display() {
         String kind;

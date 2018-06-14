@@ -7,7 +7,9 @@ public class UseOrganization {
        myOrganization.profit = true;
        myOrganization.revenue = 1000000.00;
 
-       System.out.println(myOrganization.name);
-
+       myOrganization.display();
+        
     }
+    
+       
 }

@@ -1,3 +1,5 @@
+package Live;
+
 import java.util.Scanner;
 
 public class DisplayThePlaces {

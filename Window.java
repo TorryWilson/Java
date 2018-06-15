@@ -7,20 +7,14 @@ public class Window {
         frame.addRow("Organization's Revenue");
         frame.addRow("Is it Profit? YES/NO");
         frame.go();
-
     }
 
     public static String calculate (String name, double revenue, String profit) {
 
         Organization newOrganization = new Organization();
-
         newOrganization.setName(name);
         newOrganization.setRevenue(revenue);
         newOrganization.setProfit(profit);
-
-
-        return "Your company " + newOrganization.getName() + " has " + newOrganization.getRevenue() + " in revenue and is a " + newOrganization.isProfit() + " organization";
-
-
+        return "Your company " + newOrganization.getName() + " pays " + newOrganization.taxPaying() + " in taxes!";
     }
 }

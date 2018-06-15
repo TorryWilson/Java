@@ -1,4 +1,5 @@
-// dummiesFrame class is needed 
+// dummiesFrame and Organization.java is needed 
+// GUI
 
 public class Window {
 

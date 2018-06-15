@@ -3,27 +3,34 @@
 // The DisplayThePlaces class also reads (from the keyboard) the cost of living in each place. For each place, your code displays the cost per square foot (or square meter) and the cost per bedroom
 package Live;
 public class PlaceToLive {
-// fields that a place to live has
+
     private String address;
     private int bedrooms;
     private int area;
-
-    
- // getters and setters for fields
     public String getAddress() {
         return address;
     }
 
     public void setAddress(String address) {
+        
+        if (!address.equals("")) {
+        
         this.address = address;
+        }
     }
 
     public int getBedrooms() {
+        
         return bedrooms;
     }
 
     public void setBedrooms(int bedrooms) {
-        this.bedrooms = bedrooms;
+        
+        if (bedrooms >= 1) {
+
+            this.bedrooms = bedrooms;
+        }
+        
     }
 
     public int getArea() {
@@ -31,25 +38,28 @@ public class PlaceToLive {
     }
 
     public void setArea(int area) {
-        this.area = area;
+        
+        if (area >= 0) {
+            this.area = area;
+        }
     }
 
-    // method that calculates cost per square foot and returns it
     public double areaCalc(double costofLiving) {
+        
+    
 
-    double perFoot = area / costofLiving;
+           double perFoot = area / costofLiving;
+            return perFoot;
+        }
+        
 
-    return perFoot;
-}
-
-    // method that calculates cost per bed and returns it.
     public double perBed(double costofLiving) {
-
-        double bedCost = costofLiving / bedrooms;
-
-        return bedCost;
-    }
+        
+            double bedCost = costofLiving / bedrooms;
+            return bedCost;
+        }
 
 
 }
+
 

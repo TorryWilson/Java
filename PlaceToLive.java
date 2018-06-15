@@ -7,12 +7,14 @@ public class PlaceToLive {
     private String address;
     private int bedrooms;
     private int area;
+    
+    
     public String getAddress() {
         return address;
     }
 
     public void setAddress(String address) {
-        
+        // issures user input is not blank
         if (!address.equals("")) {
         
         this.address = address;
@@ -23,7 +25,7 @@ public class PlaceToLive {
         
         return bedrooms;
     }
-
+// insures user doesnt put 0 or negative number in
     public void setBedrooms(int bedrooms) {
         
         if (bedrooms >= 1) {
@@ -38,7 +40,7 @@ public class PlaceToLive {
     }
 
     public void setArea(int area) {
-        
+    // insures user doesn't put 0 or negative number in    
         if (area >= 0) {
             this.area = area;
         }

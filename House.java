@@ -1,5 +1,8 @@
 package Live;
 
+// this class is a subclass of PlaceToLive
+// helps create a house object
+
 public class House extends PlaceToLive {
 
     private double mortgage;

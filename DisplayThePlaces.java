@@ -1,3 +1,14 @@
+/* Previously in this chapter, you create instances of your own PlaceToLive class and dsiplay info about those instances.
+ Create two subclasses (Apartment & House). Each House object has a mortgage cost (a monthly amount) and a property tax (yearly)
+Each Apartment object has a rental cost (a monthly amount)
+
+A separate DisplayThePlaces class creates some houses and some apartments. '
+For each house or apartment, your DisplayThePlaces class displays the total cost per square foot
+and the total cost per bedroom, both calculated monthly.
+
+*/
+
+
 package Live;
 import java.util.Scanner;
 public class DisplayThePlaces {
@@ -28,7 +39,7 @@ public class DisplayThePlaces {
             System.out.printf("$%4.2f\n", newHome.perBed(newHome.getMortgage()));
             System.out.println( " per bedroom monthly");
              System.out.println();
-        }
+      }
         
         
         // for loop that creates 3 apartments

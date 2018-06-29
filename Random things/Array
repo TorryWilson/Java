@@ -1,0 +1,22 @@
+// Write a program that stores five double values in an array and then displays the average of the values in the array.
+
+
+import java.util.Scanner;
+public class Main {
+
+    public static void main (String [] args) {
+
+        double sum = 0;
+        Scanner keyboard = new Scanner(System.in);
+        double values [] = new double [5];
+        for(int i = 0; i <= values.length - 1; i++) {
+
+            System.out.println("Enter double");
+            values[i] = keyboard.nextDouble();
+            sum = sum + values[i];
+        }
+
+        System.out.println(sum);
+        System.out.println(sum/5);
+    }
+}

@@ -62,3 +62,5 @@ public class Enroll {
         classmate4.Display();
     }
 }
+
+// One problem is if the user just presses enter with no information. Program will still run.

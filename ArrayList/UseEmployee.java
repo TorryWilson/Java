@@ -1,4 +1,4 @@
-/* Step through a list of employees. Find each employee whose performance evaluation scored 3 or higher. Give each such employee a $100 bonus and determine the total amount of money you'll pay in bonuses.
+// Step through a list of employees. Find each employee whose performance evaluation scored 3 or higher. Give each such employee a $100 bonus and determine the total amount of money you'll pay in bonuses.
 
 package ArrayList;
 

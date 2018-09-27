@@ -1,0 +1,4 @@
+A line of men's clothing features shirts, pants, jackets, overcoats, neckties, and shoes. Create an enum to represent the six kinds
+of items. Then create a MensClothingItem class. Each instance of the class has a kind (one of the six enum values), and a name.
+
+Write code to display a frame. The frame has six rows to describe one complete men's wardrobe.

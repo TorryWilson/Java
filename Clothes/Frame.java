@@ -9,6 +9,9 @@ import java.io.IOException;
 public class Frame extends JFrame {
 
     public Frame() throws IOException {
+        
+        // creates 6 MensClothingItems 
+        // feeds this object to the addToFrame method 
 
         MensClothingItem mensClothingItem1 = new MensClothingItem(Items.SHIRTS, "Long");
         addToFrame(mensClothingItem1);
@@ -28,6 +31,7 @@ public class Frame extends JFrame {
         MensClothingItem mensClothingItem6 = new MensClothingItem(Items.SHOES, "Oxford");
         addToFrame(mensClothingItem6);
 
+        // sets window settings such as title of window, rows, etc.
         setTitle("Outfit");
         setLayout(new GridLayout(6, 2, 20, 3));
         setDefaultCloseOperation(EXIT_ON_CLOSE);

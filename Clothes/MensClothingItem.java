@@ -4,10 +4,12 @@ import Clothes.Items;
 
 public class MensClothingItem {
 
+    // members of this class consists of an enum and string value
     private Items item;
     private String name;
 
 
+    // constructor, only way an item can be created.
     public MensClothingItem(Items item, String name) {
 
         this.item = item;
@@ -15,6 +17,7 @@ public class MensClothingItem {
 
     }
 
+    // setters and getters
     public Items getItem() {
         return item;
     }

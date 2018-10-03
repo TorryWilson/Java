@@ -1,0 +1,4 @@
+Create an enum to represent the suits in a deck of playing cards (CLUBS, DIAMONDS, HEARTS, and SPADES). 
+Create a PlayingCard class. Each playing card has a number (from 1 to 13) and a suit. 
+In the numbering scheme, 11 stands for JACK, 12 stands for QUEEN, 13 for KING. 
+Write code that creates several cards and displays them on the screen.

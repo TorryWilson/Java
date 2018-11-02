@@ -45,14 +45,18 @@ public Frame() {
 public void actionPerformed(ActionEvent e) {
 
     String textFieldText = textfield.getText();
+    // UPDATED CODE
     
-    // grays out the button after it was been clicked.
-    button.setEnabled(false);
-    // grays out text field after user inputs
-    textfield.setEnabled(false);
-    
-    // sets text of label to corresponding word user inputted.
-    labeler.setText(textFieldText);
+    // If user just clicks on button without inputting anything. Button will display Try again and wait until user enters something.
+     if (textFieldText.isEmpty()) {
+        button.setText("Try again");
+    } else {
+
+        button.setEnabled(false);
+        textfield.setEnabled(false);
+        labeler.setText(textFieldText);
+        pack();
+    }
 
 
 }

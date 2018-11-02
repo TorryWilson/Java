@@ -1,3 +1,3 @@
-Practice from Java for Dummies book Chapter 16.
+Practice from Java for Dummies book Chapter 16 by Barry Burd.
 
 Using the techniques shown in this chapter, create a program that displays a frame containing three components: a text field (JTextField), a button (JButton), and a label (JLabel). The user types text into the text field. Then, when the user clicks the button, the program copies any text that's in the text field onto the label.
